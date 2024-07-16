@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diária na Cabana</title>
+    <style>
+        /* Estilos CSS para personalizar a aparência da caixa de texto e botões */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0; /* Cor de fundo suave */
+        }
+        
+        h1 {
+            text-align: center;
+            color: #c0392b; /* Vermelho romântico */
+            font-size: 3em;
+        }
+        
+        p {
+            text-align: center;
+            font-size: 1.1em;
+            color: #333;
+        }
+        
+        #caixatexto {
+            width: 400px;
+            height: 150px;
+            margin: 20px auto;
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px; /* Arredondar cantos da caixa */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+        }
+        
+        #botoes {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+        }
+        
+        #sim, #nao {
+            padding: 10px 20px;
+            border: 1px solid #ccc;
+            cursor: pointer;
+            border-radius: 5px; /* Arredondar cantos dos botões */
+            transition: background-color 0.3s ease; /* Efeito hover suave */
+        }
+        
+        #sim:hover, #nao:hover {
+            background-color: #e0e0e0; /* Cor de fundo mais clara no hover */
+        }
+        
+        #sim {
+            background-color: #4CAF50; /* Verde para o botão "Sim" */
+            color: white;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra mais escura no hover */
+            
+        }
+        
+        #nao {
+            background-color: #f44336; /* Vermelho para o botão "Não" */
+            color: white;
+            box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2); /* Sombra mais escura no hover */
+
+        }
+        
+    </style>
+</head>
+<body>
+    <center><h1>Feliz 6 Meses meu Amor ! Que tal Celebrarmos em um Local Misterioso ?</h1></center>
+    <p>Prepare-se para uma surpresa romantica !</p>    
+
+    <div id="caixatexto">
+        <p>Você gostaria de viver esse momento junto ?!</p>
+    </div>    
+
+    <div id="botoes">
+        <button id="sim">Sim</button>
+        <button id="nao">Não</button>
+    </div>
+
+    <script>
+        // Função para capturar a resposta do usuário (Sim ou Não)
+        const botaoSim = document.getElementById('sim');
+        const botaoNao = document.getElementById('nao');
+
+        botaoSim.addEventListener('click', function() {
+            alert('Que legal! Sua reserva está confirmada para o dia 24/07/2024, Reserve essia para irmos ao CABANAHOME na Cabana do Vento.');
+        });
+        
+        botaoNao.addEventListener('click', function() {
+            alert('Obrigado por seu interesse! ate uma próxima surpresa amor.');
+        });
+        
+    </script>
+</body>
+</html>
